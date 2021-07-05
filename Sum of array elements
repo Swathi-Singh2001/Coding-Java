@@ -1,0 +1,22 @@
+public class ArraySum
+{
+
+     
+	public static void main(String []args)
+     	{        
+		int a[]={26,52,13,43,82,73,11,96,29,56};
+         
+		int sum=0;
+         
+		for( int i:a)
+         
+		sum+=i;
+        
+		System.out.println("The Sum of Array elements are: "+ sum);
+     
+	}
+
+}
+
+
+Output: The Sum of Array elements are: 481
