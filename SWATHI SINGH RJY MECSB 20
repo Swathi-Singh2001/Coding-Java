@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class SecondLargest
+
+{
+    
+	public static void main(String args[])
+    
+	{
+        
+		int a[]={23,19,86,123,96,30,42,78};
+        
+		System.out.println("Array elements are: "+Arrays.toString(a));
+        
+		Arrays.sort(a);
+        
+		int index = a.length-1;
+        
+		while(a[index]==a[a.length-1])
+        
+		{
+            
+			index--;
+        
+		}
+        
+		System.out.println("Second Largest element is: "+a[index]);
+    
+	}
+
+}
+
+
+Output: Array elements are: [23, 19, 86, 123, 96, 30, 42, 78]
+            Second Largest element is: 96
