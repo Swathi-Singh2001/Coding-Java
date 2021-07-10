@@ -1,0 +1,29 @@
+import java.io.*; 
+import java.util.*; 
+public class SortRows 
+{
+    static int sortRow(int m[][]) 
+    { 
+        for (int i = 0; i < m.length; i++) 
+            Arrays.sort(m[i]); 
+        for (int i = 0; i < m.length; i++) { 
+            for (int j = 0; j < m[i].length; j++) 
+                System.out.print(m[i][j] + " "); 
+            System.out.println(); 
+        } 
+  
+        return 0; 
+    }
+    public static void main(String args[]) 
+    { 
+        int m[][] = { { 3, 0, 2 }, 
+                      { 6, 5, 3 }, 
+                      { 8, -3, 5 } }; 
+  
+        sortRow(m); 
+    } 
+} 
+
+Output : 0 2 3 
+         3 5 6 
+         -3 5 8 
